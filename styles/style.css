@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 85%;
+    margin: auto auto;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+
+h2 {
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+/* input */
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(100, 3, 3);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(87, 87, 87);
+}
+
+
+/* adjustment */
+.container {
+    padding: 10px 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+
+/* floats */
+.float_2 {
+    width: 50%;
+    float: left;
+}
+
+.float_3 {
+    width: 33.332%;
+    float: left;
+}
+
+.float_4 {
+    width: 25%;
+    float: left;
+}
+
+.float_5 {
+    width: 20%;
+    float: left;
+}
+
+.float_6 {
+    width: 16.665%;
+    float: left;
+}
+
+.float_7 {
+    width: 14.285%;
+    float: left;
+}
+
+.float_8 {
+    width: 12.5%;
+    float: left;
+}
+
+.float_9 {
+    width: 11.110%;
+    float: left;
+}
+
+.float_10 {
+    width: 10%;
+    float: left;
+}
+
+.float_20p {
+    width: 20%;
+    float: left;
+}
+
+.float_80p {
+    width: 80%;
+    float: left;
+}
+
+/* CLEARFIX */
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .mobile_none {
+        display: none;
+    }
+    .mobile_width_100 {
+        width: 100%;
+    }
+  }
