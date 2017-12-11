@@ -1,5 +1,5 @@
 $(function() {
-    loadID('selectName');
-    loadID('selectedName');
+    loadID('getCustomerNamesAsOptions');
+    loadID('getSelectedCustomerName');    
     changeDefaultSelect();
 });

@@ -1,5 +1,6 @@
 <?php
-$dbconn = pg_connect("host=localhost dbname=h1553755 user=h1553755 password=h1553755");
+
+require ("config.php");
 
 //Note that we put extra quotes around values
 $query="select * from customers

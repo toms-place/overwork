@@ -11,10 +11,10 @@
 <link rel="stylesheet" href="styles/sectionStyles.css">
 <link rel="stylesheet" href="styles/asideStyles.css">
 <link rel="stylesheet" href="styles/footerStyles.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 <script src="scripts/jquery-3.2.1.js"></script>
 <script src="scripts/scripts.js"></script>
 <script src="scripts/getData.js"></script>
 <script src="scripts/postData.js"></script>
-<script src="scripts/changeView.js"></script>
 <script src="scripts/onLoad.js"></script>

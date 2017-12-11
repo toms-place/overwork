@@ -5,7 +5,7 @@
 
     <?php
     //Nav List - defines which data to get
-    $nav = array("customers", "worked", "payment");
+    $nav = array("customers", "worked", "payment", "overview");
     $navlength = count($nav);
 
     for ($x = 0; $x <= $navlength - 1; $x++) {
@@ -15,9 +15,8 @@
         echo "<a href='javascript:void(0);' class='navLink' onclick=\"loadMain('$nav[$x]')\">$site</a>";
     } 
     ?>
-
-    <a href="addCustomer.php" >addCustomer</a>
-    <a href="addWorked.php" >addWorked</a>
+    
+    <a href="addCustomer.php" >NewCUSTOMER</a>
 
     <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776; MENU</a>
 
