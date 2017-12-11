@@ -8,12 +8,16 @@ function toggleNav() {
     }
 }
 
+/* Toggle the selected user */
 function changeDefaultSelect() {
-    $.get( "controller/selectedName.php", function(data) {
-        $("#selectName option").each(function() {
-                y = $(this).text();
+    $.get( "controller/getSelectedCustomerID.php", function(data) {
+        $("#getCustomerNamesAsOptions option").each(function() {
+            for (x=0; x < $(this).length; x++){
+                y = $(this)[x].value;
                 if (y == data) {
-                    $(this).prop('selected', true);}
+                    $(this).prop('selected', true);
+                }
+            }                
         });
     });
 }

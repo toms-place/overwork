@@ -2,7 +2,7 @@
 
     <div class="float_80p mobile_width_100">
         <div class="">
-            <h1>Selected Customer: <span id="selectedName"></span></h1>
+            <h1>Selected Customer: <span id="getSelectedCustomerName"></span></h1>
         </div>        
     </div>
 

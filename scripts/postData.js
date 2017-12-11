@@ -10,10 +10,7 @@
         }).done(function(data) {
 
             loadMain(data);
-            loadID(data);
-            loadID('selectName');
-            changeDefaultSelect();
-            loadID('selectedName');            
+            loadID('getSelectedCustomerName');
 
         }).fail(function(data) {
             alert('fail postData');
