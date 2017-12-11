@@ -1,0 +1,48 @@
+aside {
+    width: 20%;
+    float: left;
+    min-height: 80vh;
+}
+
+aside .formHead {
+    background-color: rgb(100, 3, 3);
+    color: white;
+    padding: 1px 15px;
+    margin: 10px 0 0 0;
+}
+
+aside .formBody {
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    margin: 0 0 10px 0;
+}
+
+aside .form {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);    
+}
+
+@media screen and (max-width: 1000px) {
+    aside {
+        width: 100%;
+        float: none;
+        min-height: inherit;
+    }
+}
+
+.tableAside {
+    margin: 10px 0 10px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: table;
+  }
+
+@media screen and (max-width: 660px) {
+    aside {
+        margin-top: 55px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .tableAside {
+        display: block;
+    }
+}
