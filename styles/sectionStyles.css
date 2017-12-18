@@ -31,7 +31,7 @@ section {
 .row.header {
   font-weight: 900;
   color: #ffffff;
-  background: #ea6153;
+  background: rgb(100, 3, 3);
 }
 .row.green {
   background: #27ae60;

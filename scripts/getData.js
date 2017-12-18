@@ -1,7 +1,7 @@
 
 //load Data into ID 
 function loadID(id) {
-    $("#" + id).load("controller/" + id + ".php", function(responseTxt, statusTxt, xhr){
+    $("#" + id).load("model/" + id + ".php", function(responseTxt, statusTxt, xhr){
         if(statusTxt == "success")
             console.log("loadID ok - #" + id);
         if(statusTxt == "error")
@@ -13,7 +13,7 @@ function loadID(id) {
 
 //this funciton gets the input controller file and loads it to the main/body
 function loadMain(file) {
-    $("#main_section").load("controller/" + file + ".php", function(responseTxt, statusTxt, xhr){
+    $("#main_section").load("model/" + file + ".php", function(responseTxt, statusTxt, xhr){
         if(statusTxt == "success")
             console.log("loadMain ok - #" + file);
         if(statusTxt == "error")
