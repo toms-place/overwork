@@ -30,4 +30,29 @@ $row = pg_fetch_object($result);
 }
 pg_free_result($result);
 pg_close($dbconn);
+
+
+//sum
+require ("config.php");
+
+$query2="select sum(amount)
+        from customers
+        natural join payment
+        where customer_id = (SELECT selectedcustomer FROM users as U WHERE U.userid = 1);";
+
+$result2 = pg_query($query2);
+
+$row = pg_fetch_object($result2);
+
+while($row) {
+    echo "<div class='row'>";
+    echo "<div class='cell sum'> SUMME: </div>";
+    echo "<div class='cell sum'> $row->sum </div>"; 
+    echo "</div>";
+    $row = pg_fetch_object($result2);
+    }
+
+pg_free_result($result2);
+pg_close($dbconn);
+
 ?>

@@ -10,7 +10,7 @@ function toggleNav() {
 
 /* Toggle the selected user */
 function changeDefaultSelect() {
-    $.get( "controller/getSelectedCustomerID.php", function(data) {
+    $.get( "model/getSelectedCustomerID.php", function(data) {
         $("#getCustomerNamesAsOptions option").each(function() {
             for (x=0; x < $(this).length; x++){
                 y = $(this)[x].value;

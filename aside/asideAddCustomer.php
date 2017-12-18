@@ -5,7 +5,7 @@
         </h2>
     </div>
     <div class="formBody">
-        <form id="postCustomer" action="controller/postCustomer.php" method="post" data-autosubmit>
+        <form id="postCustomer" action="model/postCustomer.php" method="post" data-autosubmit>
 
             <label for="name">Name:</label>
             <input type="text" id="name" name="c_1" placeholder="Name of Business..">

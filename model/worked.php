@@ -39,10 +39,10 @@ pg_close($dbconn);
 //sum
 require ("config.php");
 
-$query2="select sum(price) as sum from worked where customer_id = all (
-    select selectedcustomer from users
-    where userid = 1
-    );";
+$query2="select sum(price)
+        from customers
+        natural join worked
+        where customer_id = (SELECT selectedcustomer FROM users as U WHERE U.userid = 1);";
 
 $result2 = pg_query($query2);
 

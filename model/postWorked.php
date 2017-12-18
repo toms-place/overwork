@@ -18,7 +18,8 @@ function test_input($data) {
 
         $worked_price = $c_2 / 60 * $c_1;
 
-        $insertquery="insert into worked (customer_id, date, minutesworked, price)
+        $insertquery="
+        insert into worked (customer_id, date, minutesworked, price)
         select (select customer_id from customers 
             where customer_id = all (
                 select selectedcustomer from users

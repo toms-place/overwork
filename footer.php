@@ -1,1 +1,1 @@
-<footer> <a href="http://balrog.wu.ac.at/~h1553755">HOME</a> </footer>
+<footer> <a href="http://balrog.wu.ac.at/~h1553755">HOME</a> | <a href="http://balrog.wu.ac.at/~h1553755/ERD.php">ERD</a></footer>
